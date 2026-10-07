@@ -74,7 +74,7 @@ footer {
 
 .page-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr));
   gap: 1rem;
 }
 
@@ -101,10 +101,6 @@ footer {
   display: inline-block;
   margin-top: 1.5rem;
   font-weight: 700;
-}
-
-.page-card-disabled {
-  opacity: 0.6;
 }
 
 .page-card-link {
