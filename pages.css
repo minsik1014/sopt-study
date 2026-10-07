@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+:root {
+  font-family:
+    Pretendard,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  color: #3b294f;
+  background-color: #fcfaff;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.site-header,
+main,
+footer {
+  width: min(100% - 2rem, 960px);
+  margin-inline: auto;
+}
+
+.site-header {
+  padding-block: 6rem 3rem;
+}
+
+.site-header h1,
+.site-header p {
+  margin: 0;
+}
+
+.site-header h1 {
+  margin-block: 0.5rem;
+  color: #6f4c8f;
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  line-height: 1.05;
+}
+
+.site-header > p:last-child {
+  color: #6f6478;
+  font-size: 1.125rem;
+}
+
+.eyebrow,
+.week-heading span,
+.page-type {
+  color: #d95f9f;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.week-section {
+  padding-block: 2rem 5rem;
+}
+
+.week-heading {
+  margin-bottom: 1.5rem;
+}
+
+.week-heading h2 {
+  margin-block: 0.25rem 0;
+  font-size: 1.75rem;
+}
+
+.page-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.page-card {
+  min-height: 14rem;
+  padding: 1.5rem;
+  border: 1px solid #d8c9e5;
+  border-radius: 1rem;
+  background-color: #f8f4fb;
+}
+
+.page-card h3 {
+  margin-block: 2rem 0.5rem;
+  font-size: 1.375rem;
+}
+
+.page-card p {
+  margin: 0;
+  color: #6f6478;
+  line-height: 1.6;
+}
+
+.page-status {
+  display: inline-block;
+  margin-top: 1.5rem;
+  font-weight: 700;
+}
+
+.page-card-disabled {
+  opacity: 0.6;
+}
+
+.page-card-link {
+  color: inherit;
+  text-decoration: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.page-card-link:hover {
+  border-color: #6f4c8f;
+  box-shadow: 0 0.75rem 1.5rem rgb(59 41 79 / 16%);
+  transform: translateY(-0.25rem);
+}
+
+.page-card-link:focus-visible {
+  outline: 0.1875rem solid #d95f9f;
+  outline-offset: 0.1875rem;
+}
+
+footer {
+  padding-block: 2rem;
+  color: #6f6478;
+  text-align: center;
+}
+
+@media (width <= 640px) {
+  .site-header {
+    padding-block-start: 4rem;
+  }
+
+  .page-grid {
+    grid-template-columns: 1fr;
+  }
+}
