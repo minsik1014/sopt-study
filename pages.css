@@ -43,6 +43,7 @@ footer {
   color: #6f4c8f;
   font-size: clamp(2.5rem, 8vw, 5rem);
   line-height: 1.05;
+  word-break: keep-all;
 }
 
 .site-header > p:last-child {
