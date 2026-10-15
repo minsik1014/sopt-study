@@ -46,6 +46,11 @@ footer {
   word-break: keep-all;
 }
 
+.site-title-part {
+  display: inline-block;
+  white-space: nowrap;
+}
+
 .site-header > p:last-child {
   color: #6f6478;
   font-size: 1.125rem;
