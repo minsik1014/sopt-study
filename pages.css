@@ -7,9 +7,10 @@
     BlinkMacSystemFont,
     "Segoe UI",
     sans-serif;
-  color: #3b294f;
-  background-color: #fcfaff;
+  color: #d6d8df;
+  background-color: #202226;
   font-synthesis: none;
+  color-scheme: dark;
 }
 
 * {
@@ -30,7 +31,7 @@ footer {
 }
 
 .site-header {
-  padding-block: 6rem 3rem;
+  padding-block: 4rem 2.5rem;
 }
 
 .site-header h1,
@@ -40,9 +41,9 @@ footer {
 
 .site-header h1 {
   margin-block: 0.5rem;
-  color: #6f4c8f;
-  font-size: clamp(2.5rem, 8vw, 5rem);
-  line-height: 1.05;
+  color: #e1e2e7;
+  font-size: clamp(1.75rem, 4.5vw, 2.75rem);
+  line-height: 1.4;
   word-break: keep-all;
 }
 
@@ -52,21 +53,21 @@ footer {
 }
 
 .site-header > p:last-child {
-  color: #6f6478;
+  color: #a9adb8;
   font-size: 1.125rem;
 }
 
 .eyebrow,
 .week-heading span,
 .page-type {
-  color: #d95f9f;
+  color: #b5a6ce;
   font-size: 0.75rem;
   font-weight: 800;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.06em;
 }
 
 .week-section {
-  padding-block: 2rem 5rem;
+  padding-block: 1.5rem 2rem;
 }
 
 .week-heading {
@@ -75,7 +76,7 @@ footer {
 
 .week-heading h2 {
   margin-block: 0.25rem 0;
-  font-size: 1.75rem;
+  font-size: 1.25rem;
 }
 
 .page-grid {
@@ -85,21 +86,21 @@ footer {
 }
 
 .page-card {
-  min-height: 14rem;
+  min-height: 10rem;
   padding: 1.5rem;
-  border: 1px solid #d8c9e5;
-  border-radius: 1rem;
-  background-color: #f8f4fb;
+  border: 1px solid #3c3f47;
+  border-radius: 0.75rem;
+  background-color: #282b30;
 }
 
 .page-card h3 {
-  margin-block: 2rem 0.5rem;
-  font-size: 1.375rem;
+  margin-block: 1rem 0.5rem;
+  font-size: 1.125rem;
 }
 
 .page-card p {
   margin: 0;
-  color: #6f6478;
+  color: #a9adb8;
   line-height: 1.6;
 }
 
@@ -114,24 +115,22 @@ footer {
   text-decoration: none;
   transition:
     border-color 0.2s ease,
-    box-shadow 0.2s ease,
-    transform 0.2s ease;
+    background-color 0.2s ease;
 }
 
 .page-card-link:hover {
-  border-color: #6f4c8f;
-  box-shadow: 0 0.75rem 1.5rem rgb(59 41 79 / 16%);
-  transform: translateY(-0.25rem);
+  border-color: #8f80a8;
+  background-color: #30333a;
 }
 
 .page-card-link:focus-visible {
-  outline: 0.1875rem solid #d95f9f;
+  outline: 0.1875rem solid #b5a6ce;
   outline-offset: 0.1875rem;
 }
 
 footer {
   padding-block: 2rem;
-  color: #6f6478;
+  color: #a9adb8;
   text-align: center;
 }
 
