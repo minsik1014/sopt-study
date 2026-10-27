@@ -6,6 +6,7 @@ const root = fileURLToPath(new URL('../', import.meta.url));
 const pages = [
   { path: 'Week1/Homework/index.html', id: 'week1', title: '1주차 · HTML/CSS' },
   { path: 'Week2/Homework/one-to-fifty/index.html', id: 'week2', title: '2주차 · 1 to 50' },
+  { path: 'Week3/Homework/movie-explorer/index.html', id: 'week3', title: '3주차 · 영화 탐색' },
 ];
 
 // React 재빌드로 HTML이 바뀌어도 이 명령으로 배포 메뉴 다시 추가
