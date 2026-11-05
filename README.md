@@ -53,3 +53,19 @@ node scripts/add-deployment-navigation.mjs
 
 공통 스타일은 `deployment-navigation.css`에서 관리합니다.
 새 주차를 배포할 때는 스크립트의 `pages` 목록에도 경로와 제목을 추가합니다.
+
+
+### 4주차 게시판
+
+조직 저장소 `week4/homework`의 `61286e0`을 기준으로 빌드했습니다.
+배포 사본에만 해시 라우팅과 전체 과제 홈 메뉴를 적용했습니다.
+
+```sh
+VITE_API_URL=https://playsopt.o-r.kr/api/v1 npm run build -- --base=/sopt-study/Week4/Homework/
+```
+
+[4주차 화면](https://minsik1014.github.io/sopt-study/Week4/Homework/)을 열 수 있습니다.
+다만 2026년 11월 5일 확인 결과, API는 Origin이 `http://localhost:5173`이면 200을 반환하고
+`https://minsik1014.github.io`이면 403을 반환했습니다.
+배포본에서 실제 조회·발급·작성·수정·삭제는 사용할 수 없으며,
+[원본 README](https://github.com/39-play-sopt-web/SimMinSik/blob/week4/homework/Week4/Homework/README.md)에 따라 로컬에서 실행해야 합니다.

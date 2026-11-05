@@ -59,3 +59,15 @@ body[data-deployment-page="week1"] .side-navigation {
 body[data-deployment-page="week1"] main section {
   scroll-margin-top: calc(5.5rem + var(--deployment-nav-height));
 }
+
+.deployment-api-notice {
+  padding: 0.875rem max(1rem, calc((100% - 1152px) / 2));
+  background: #fff7e8;
+  color: #694817;
+  font: 400 0.875rem/1.6 system-ui, sans-serif;
+}
+
+.deployment-api-notice a {
+  color: inherit;
+  text-decoration: underline;
+}
